@@ -1,7 +1,7 @@
 type MenuOptions = '' | 'all' | 'dog' | 'cat' | 'fish';
 
-//Constante createMenuObjects recebe conteúdo da função anônima activeMenu
-export const createMenuObjects = (activeMenu: MenuOptions) => {
+//Constante createMenuObject recebe conteúdo da função anônima activeMenu
+export const createMenuObject = (activeMenu: MenuOptions) => {
     let returnObject = {
         all: false,
         dog: false,
