@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Projeto feito no módulo do curso Node + Typescript",
   "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
+    "start": "node dist/server.js",
+    "postinstall": "tsc && copyfiles -u 1 src/**/*.mustache dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
